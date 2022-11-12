@@ -1,0 +1,40 @@
+/* .tag{
+    position: absolute;
+    padding: 0.1em 1em;
+    z-index: 99;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 12px;
+    pointer-events: auto;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 3px;
+    background-color: rgb(250, 218, 94);
+    color: rgb(18, 18, 18);
+    top: 0px;
+    right: 0px;
+    transform: translateY(-100%) rotate(90deg) translateX(70.7107%) rotate(-45deg);
+    transform-origin: right bottom;
+} */
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.product-container{
+    width: 100%;
+    object-fit: contain;
+    max-height: 320px;
+    transition: transform 450ms;
+    margin-right: 2%;
+}
+
+.product-container:hover{
+    transform: scale(1.08);
+}
+
+@media only screen and (max-width: 600px) {
+    .product-container{
+        max-width: 350px;
+        margin-right: 4%;
+    }
+  }
